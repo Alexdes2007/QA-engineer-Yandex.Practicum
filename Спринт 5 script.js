@@ -42,10 +42,10 @@ async function testTaxiResult() {
     const text = await page.$eval('#result-time-price', element => element.textContent);
 
     console.log('Проверка условия тест-кейса');
-        if (text.startsWith('Такси')) {
+      if (text.startsWith('Такси')) {
         console.log('Успех. Текст содержит: ' + text);
     } else {
-          console.log(`Ошибка. Текст не начинается со слова 'Такси'`)
+          console.log(`Ошибка. Текст не начинается со слова 'Такси'`);
     }
 
     console.log('Закрытие браузера');
